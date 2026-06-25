@@ -1,0 +1,13 @@
+{
+  "project_name": "SpecToTicketAlignmentTest",
+  "api_endpoint": "https://api.github.com/repos/mock-user/mock-repo",
+  "issue_tracker_type": "github",
+  
+  "__comment_security_alert__": "WARNING: Do NOT put your actual API key, Personal Access Token (PAT), or password here. This file is intended for version control. Load your credentials using environment variables or a local untracked file (e.g., .env) instead.",
+  
+  "auth_config": {
+    "auth_method": "bearer_token",
+    "token_env_var": "ISSUE_TRACKER_TOKEN",
+    "token_placeholder_for_local_testing_only": "PLACEHOLDER_DO_NOT_COMMIT_REAL_KEYS"
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "SPEC-001",
+    "title": "User Registration Schema Alignment",
+    "description": "Align database schemas for the new User model. Ensure that the 'email' field has a unique constraint and that password hashes are stored in a separate column.",
+    "target_file": "models/user.py"
+  },
+  {
+    "id": "SPEC-002",
+    "title": "Duplicate Login Route Cleanup",
+    "description": "Identify and remove duplicate /api/v1/auth/login routes in route controllers. Merge redundant handler logic.",
+    "target_file": "routes/auth.py"
+  }
+]

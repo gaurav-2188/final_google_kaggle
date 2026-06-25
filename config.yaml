@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/google/adk-python/refs/heads/main/src/google/adk/agents/config_schemas/AgentConfig.json
+
+# ==============================================================================
+# SECURITY COMPLIANCE NOTE:
+# Do NOT store credentials, API keys, or access tokens within this configuration file.
+# The ADK runtime automatically consumes system environment variables (like GEMINI_API_KEY)
+# loaded at execution time, which guarantees that raw secrets never leak into source code
+# repositories or config files.
+# ==============================================================================
+
+# Differentiates this agent class for the ADK orchestrator
+agent_class: LlmAgent
+
+# Unique name and metadata of the agent
+name: spec_to_ticket_alignment_agent
+description: "Spec-to-Ticket Codebase Alignment Agent designed to align product specs and generate tickets."
+
+# Global model configuration for Gemini 2.5 interaction
+model: gemini-2.5-flash
+
+# Main behavior system instructions for the LLM Agent
+instruction: |
+  You are a Spec-to-Ticket Codebase Alignment Agent under the Agents for Business track.
+  Your task is to ingest technical product specifications, analyze target code files, and
+  generate accurate, actionable developer tickets (e.g. issues) to align code with specifications.
+
+# Generation parameters and token constraints
+generate_content_config:
+  temperature: 0.2               # Low temperature for deterministic, structured reasoning
+  maxOutputTokens: 2048          # Explicit output token constraint to prevent infinite loops and control costs

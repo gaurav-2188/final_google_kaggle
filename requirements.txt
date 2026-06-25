@@ -1,0 +1,23 @@
+# ==============================================================================
+# SECURITY NOTICE:
+# Always keep secrets, API keys, and private credentials OUT of source control.
+# Do NOT hardcode sensitive information in your python codebase or config files.
+# Instead, define placeholders in a template configuration and load active credentials
+# at runtime using environment variables (e.g. via python-dotenv) or a secure 
+# secret management service (such as Google Cloud Secret Manager).
+# ==============================================================================
+
+# Core Agent Development Kit (ADK) 2.0 for multi-agent graphs and workflows
+google-adk>=2.0.0
+
+# Official Google GenAI SDK for Gemini 2.5 interaction
+google-genai
+
+# MCP (Model Context Protocol) integration for tools and ecosystem services
+fastmcp
+
+# Environment configuration management (loading secrets safely from .env)
+python-dotenv
+
+# Rich terminal UI library for high-quality console output and debugging logs
+rich

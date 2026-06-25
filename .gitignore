@@ -1,0 +1,24 @@
+# Virtual environment
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Local environment variables containing actual secrets
+.env
+.env.local
+.env.*.local
+
+# IDE configuration and workspace metadata
+.idea/
+.vscode/
+.gemini/
+.agents/
+agent_playground/
+
+# Ignore actual authentication keys or private key files
+*.key
+*.pem
+secrets.json
+credentials.json
