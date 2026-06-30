@@ -1,4 +1,4 @@
-# Spec-to-Ticket Codebase Alignment Agent 🛠️🎟️
+# Spec-to-Ticket Codebase Alignment Agent 🛠️
 
 A production-grade multi-agent workflow orchestrator designed under the **Agents for Business** track using **Google ADK 2.0** and the **Google GenAI SDK**. 
 
